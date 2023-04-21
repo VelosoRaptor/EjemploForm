@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario Inicio Sesión CSS</title>
+    <link rel="stylesheet" href="css/cssform.css">
+  </head>
+  
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post">
+        <div class="txt_field">
+          <label>Nombre Usuario</label>
+          <input type="text" 
+          required
+          minlength="8"
+          maxlength="15"
+          autocomplete="on"
+          pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}">
+          <title>"Solo algo..."</title>
+        </div>
+
+
+        <div class="txt_field">
+          <label>Email</label>
+          <input type="email" 
+          required
+          minlength="1"
+          maxlength="30"
+          pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+          >
+          
+        </div>
+
+        <div class="txt_field">
+          <label for="userPassword">Contraseña</label>
+          <input type="password" required>         
+        </div>
+
+        <input type="submit" value="Iniciar Sesión">
+
+        <div class="link_Ayuda">
+          Olvido Contraseña? <a href="#">Clic Aquí</a>
+        </div>
+
+        <div class="link_Ayuda">
+
+          No Tiene Cuenta? <a href="#">Registrar</a>
+        </div>
+
+      </form>
+    </div>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
